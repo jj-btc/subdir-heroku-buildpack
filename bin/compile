@@ -8,6 +8,14 @@ BUILD_DIR=${1:-}
 CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 
+echo "PROJECT_PATH: $PROJECT_PATH"
+
+echo "SubDir of $BUILD_DIR"
+for f in "$BUILD_DIR"/*
+do 
+    echo "$f"
+done
+
 echo "SubDir of $ENV_DIR"
 for f in "$ENV_DIR"/*
 do 
